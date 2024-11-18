@@ -11,7 +11,7 @@
 
 
 
-  
+
 *{
    margin: 0;
    padding: 0;
@@ -22,3 +22,26 @@ img {
     width: 100%;  /* Ensure the images take full width */
     display: block;  /* Prevent images from having space below them */}
   
+
+
+    .image-container {
+        position: relative;
+        width: 100%; /* Set a width based on your images or use 100% */
+    }
+    
+    .background {
+        width: 100%;
+    border: 5px solid white;
+    display: block; /* Remove any default inline spacing */
+    margin: 0 auto; /* Center the image horizontally */
+    }
+    
+    .foreground {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 50%; /* Adjust width as needed */;
+        pointer-events: none; /* Optional: prevents the foreground from blocking interactions */
+    }
+    
