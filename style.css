@@ -48,6 +48,7 @@ body {
 
 .img2 {
     width: 100%;
+    border-color: white;
     display: block; /* Remove any default inline spacing */
     margin: 0 auto; /* Center the image horizontally */
   }
