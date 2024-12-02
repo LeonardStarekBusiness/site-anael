@@ -42,7 +42,7 @@ img {
         left: 80%;
         transform: translate(-50%, -50%) scale(1.1); /* Initially scaled down */
         animation: ltrz 2s forwards; /* Trigger the zoom-in animation */
-        width: 70%; /* Adjust width as needed */;
+        width: 100%; /* Adjust width as needed */;
         pointer-events: none; /* Optional: prevents the foreground from blocking interactions */
     }
 	
@@ -53,7 +53,7 @@ img {
         left: 80%;
         transform: translate(-50%, -50%) scale(1); /* Initially scaled down */
         animation: ltrz 2s forwards; /* Trigger the zoom-in animation */
-        width: 70%; /* Adjust width as needed */;
+        width: 100%; /* Adjust width as needed */;
         pointer-events: none; /* Optional: prevents the foreground from blocking interactions */
     }
 	
@@ -64,7 +64,7 @@ img {
         left: 50%;
         transform: translate(-50%, -50%) scale(1); /* Initially scaled down */
         animation: ZoomIn 3s forwards; /* Trigger the zoom-in animation */
-        width: 70%; /* Adjust width as needed */;
+        width: 65%; /* Adjust width as needed */;
         pointer-events: none; /* Optional: prevents the foreground from blocking interactions */
     }
 	
@@ -75,7 +75,7 @@ img {
         left: 80%;
         transform: translate(-50%, -50%) scale(1); /* Initially scaled down */
         animation: rtlz 2s forwards; /* Trigger the zoom-in animation */
-        width: 70%; /* Adjust width as needed */;
+        width: 100%; /* Adjust width as needed */;
         pointer-events: none; /* Optional: prevents the foreground from blocking interactions */
     }
     
@@ -84,7 +84,7 @@ img {
             left: -50%;
         }
         100% {
-            left: 40%;
+            left: 50%;
         }
     }
 	
@@ -93,7 +93,7 @@ img {
             left: 150%;
         }
         100% {
-            left: 60%;
+            left: 50%;
         }
     }
 	
