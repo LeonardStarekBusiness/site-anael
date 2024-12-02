@@ -10,8 +10,6 @@
   }
 
 
-
-
 *{
    margin: 0;
    padding: 0;
@@ -31,26 +29,80 @@ img {
     
     .background {
         width: 100%;
-    border: 5px solid white;
+		
+    
     display: block; /* Remove any default inline spacing */
     margin: 0 auto; /* Center the image horizontally */
     }
     
-    .foreground {
+    .ltr {
         position: absolute;
-        top: 35%;
+        top: 15%;
+		height:33%;
         left: 80%;
-        transform: translate(-50%, -50%) scale(0); /* Initially scaled down */
-        animation: zoomIn 4s forwards; /* Trigger the zoom-in animation */
-        width: 50%; /* Adjust width as needed */;
+        transform: translate(-50%, -50%) scale(1.1); /* Initially scaled down */
+        animation: ltrz 2s forwards; /* Trigger the zoom-in animation */
+        width: 70%; /* Adjust width as needed */;
+        pointer-events: none; /* Optional: prevents the foreground from blocking interactions */
+    }
+	
+	.ltrL {
+        position: absolute;
+        top: 83%;
+		height:33%;
+        left: 80%;
+        transform: translate(-50%, -50%) scale(1); /* Initially scaled down */
+        animation: ltrz 2s forwards; /* Trigger the zoom-in animation */
+        width: 70%; /* Adjust width as needed */;
+        pointer-events: none; /* Optional: prevents the foreground from blocking interactions */
+    }
+	
+	.logo {
+        position: absolute;
+        top: 15%;
+		height:33%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(1); /* Initially scaled down */
+        animation: ZoomIn 3s forwards; /* Trigger the zoom-in animation */
+        width: 70%; /* Adjust width as needed */;
+        pointer-events: none; /* Optional: prevents the foreground from blocking interactions */
+    }
+	
+	.rtl {
+        position: absolute;
+        top: 50%;
+		height:33%;
+        left: 80%;
+        transform: translate(-50%, -50%) scale(1); /* Initially scaled down */
+        animation: rtlz 2s forwards; /* Trigger the zoom-in animation */
+        width: 70%; /* Adjust width as needed */;
         pointer-events: none; /* Optional: prevents the foreground from blocking interactions */
     }
     
-    @keyframes zoomIn {
+    @keyframes ltrz {
         0% {
-            transform: translate(-50%, -50%) scale(0); /* Start small */
+            left: -50%;
         }
         100% {
-            transform: translate(-50%, -50%) scale(1); /* End at normal size */
+            left: 40%;
+        }
+    }
+	
+	@keyframes rtlz {
+        0% {
+            left: 150%;
+        }
+        100% {
+            left: 60%;
+        }
+    }
+	
+	
+	@keyframes ZoomIn {
+        0% {
+            transform: translate(-50%, -50%) scale(0);
+        }
+        100% {
+            transform: translate(-50%, -50%) scale(1);
         }
     }
