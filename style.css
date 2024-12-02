@@ -1,5 +1,5 @@
 .sexen {
-    background-color: rgba(205, 227, 249, 1);
+    background-color: rgba(0, 0, 0, 1);
    }
 
 .img2 {
@@ -23,8 +23,11 @@ img {
 
 
     .image-container {
-        position: relative;
-        width: 100%; /* Set a width based on your images or use 100% */
+        display: flex;         /* Use flexbox layout */
+      flex-direction: column; /* Stack items vertically */
+      align-items: center;    /* Center the images horizontally */
+      justify-content: center; /* Center the images vertically */
+      height: 100vh;   
     }
     
     .background {
@@ -36,9 +39,10 @@ img {
     }
     
     .ltr {
+		object-fit: cover; 
         position: absolute;
-        top: 15%;
-		height:33%;
+		object-fit: contain;
+		height:33vh;
         left: 80%;
         transform: translate(-50%, -50%) scale(1.1); /* Initially scaled down */
         animation: ltrz 2s forwards; /* Trigger the zoom-in animation */
@@ -47,9 +51,10 @@ img {
     }
 	
 	.ltrL {
+		object-fit: cover; 
+		object-fit: contain;
         position: absolute;
-        top: 83%;
-		height:33%;
+		height:33vh;
         left: 80%;
         transform: translate(-50%, -50%) scale(1); /* Initially scaled down */
         animation: ltrz 2s forwards; /* Trigger the zoom-in animation */
@@ -59,19 +64,19 @@ img {
 	
 	.logo {
         position: absolute;
-        top: 15%;
-		height:33%;
+        top: 25%;
+		height:25vw;
         left: 50%;
         transform: translate(-50%, -50%) scale(1); /* Initially scaled down */
         animation: ZoomIn 3s forwards; /* Trigger the zoom-in animation */
-        width: 65%; /* Adjust width as needed */;
+        width: 25vw; /* Adjust width as needed */;
         pointer-events: none; /* Optional: prevents the foreground from blocking interactions */
     }
 	
 	.rtl {
+		object-fit: contain;
         position: absolute;
-        top: 50%;
-		height:33%;
+		height:33vh;
         left: 80%;
         transform: translate(-50%, -50%) scale(1); /* Initially scaled down */
         animation: rtlz 2s forwards; /* Trigger the zoom-in animation */
@@ -79,6 +84,13 @@ img {
         pointer-events: none; /* Optional: prevents the foreground from blocking interactions */
     }
     
+	.image {
+      width: 100vw;   /* Adjust the width to 80% of the viewport width */
+      height: 33vh;  /* Adjust the height to 30% of the viewport height */
+      object-fit: cover; /* Zoom the image to cover the space */
+      margin: 1px 0; /* Space between the images */
+    }
+	
     @keyframes ltrz {
         0% {
             left: -50%;
