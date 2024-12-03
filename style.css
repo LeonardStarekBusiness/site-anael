@@ -89,14 +89,15 @@ img {
       height: 33vh;  /* Adjust the height to 30% of the viewport height */
       object-fit: cover; /* Zoom the image to cover the space */
       margin: 1px 0; /* Space between the images */
+	  animation: ltrz 2s forwards;
     }
 	
     @keyframes ltrz {
         0% {
-            left: -50%;
+            width: 1vw;
         }
         100% {
-            left: 50%;
+            width: 100vw;
         }
     }
 	
