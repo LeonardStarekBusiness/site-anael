@@ -69,7 +69,6 @@ img {
         left: 50%;
         transform: translate(-50%, -50%) scale(1); /* Initially scaled down */
         animation: ZoomIn 3s forwards; /* Trigger the zoom-in animation */
-        width: 25vw; /* Adjust width as needed */;
         pointer-events: none; /* Optional: prevents the foreground from blocking interactions */
     }
 	
