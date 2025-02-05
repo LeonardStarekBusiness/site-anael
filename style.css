@@ -65,7 +65,7 @@ img {
 	.logo {
         position: absolute;
         top: 25%;
-		height:25vw;
+	height:30%;
         left: 50%;
         transform: translate(-50%, -50%) scale(1); /* Initially scaled down */
         animation: ZoomIn 3s forwards; /* Trigger the zoom-in animation */
